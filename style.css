@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0b0e14;
+  color: #ffffff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 25px;
+  background: #141824;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #23293a;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #e53935;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #ffffff;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-auth {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn-login {
+  background: #23293a;
+  color: #ffffff;
+  border: 1px solid #3a4462;
+}
+
+.btn-login:hover {
+  background: #2e364f;
+}
+
+.btn-register {
+  background: #e53935;
+  color: #ffffff;
+}
+
+.btn-register:hover {
+  background: #d32f2f;
+}
+
+/* Фильтры */
+.filter-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #141824;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #23293a;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  color: #8f94b2;
+  font-size: 14px;
+}
+
+select {
+  background: #1b2030;
+  color: #ffffff;
+  border: 1px solid #2e364f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Сетка карточек */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #141824;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #23293a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #e53935;
+}
+
+.server-badge {
+  display: inline-block;
+  background: #282f45;
+  color: #ffb74d;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.category-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.cat-virts { background: rgba(76, 175, 80, 0.2); color: #81c784; }
+.cat-account { background: rgba(33, 150, 243, 0.2); color: #64b5f6; }
+.cat-property { background: rgba(156, 39, 176, 0.2); color: #ba68c8; }
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #23293a;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.btn-buy {
+  background: #e53935;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-buy:hover {
+  background: #d32f2f;
+}

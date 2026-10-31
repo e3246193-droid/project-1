@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR Market — Black Russia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header>
+    <div class="logo">BLACK RUSSIA <span>MARKET</span></div>
+    
+    <!-- Переключатели и Кнопки авторизации -->
+    <div class="header-actions">
+      <!-- Переключатель языка -->
+      <select id="langSelect">
+        <option value="ru">🇷🇺 RU</option>
+        <option value="en">🇬🇧 EN</option>
+      </select>
+
+      <!-- Переключатель валют -->
+      <select id="currencySelect">
+        <option value="KGS">сом (KGS)</option>
+        <option value="RUB">₽ (RUB)</option>
+        <option value="USD">$ (USD)</option>
+        <option value="KZT">₸ (KZT)</option>
+      </select>
+
+      <!-- Кнопки входа -->
+      <button class="btn-auth btn-login" id="loginBtn" data-ru="Войти" data-en="Login">Войти</button>
+      <button class="btn-auth btn-register" id="registerBtn" data-ru="Зарегистрироваться" data-en="Register">Зарегистрироваться</button>
+    </div>
+  </header>
+
+  <!-- Панель фильтров -->
+  <div class="filter-panel">
+    <div class="filter-group">
+      <label id="lblServer" data-ru="Сервер:" data-en="Server:">Сервер:</label>
+      <select id="filterServer"></select>
+    </div>
+
+    <div class="filter-group">
+      <label id="lblCategory" data-ru="Категория:" data-en="Category:">Категория:</label>
+      <select id="filterCategory">
+        <option value="all" data-ru="Все категории" data-en="All categories">Все категории</option>
+        <option value="virts" data-ru="Вирты / Валюта" data-en="Currency / Virts">Вирты / Валюта</option>
+        <option value="account" data-ru="Аккаунты" data-en="Accounts">Аккаунты</option>
+        <option value="property" data-ru="Имущество (Дома/Авто)" data-en="Property (Houses/Cars)">Имущество (Дома/Авто)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Сетка товаров -->
+  <div class="market-grid" id="marketGrid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
